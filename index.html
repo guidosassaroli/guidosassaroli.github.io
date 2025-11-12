@@ -72,7 +72,7 @@
     /* Hero */
     .hero { display:grid; grid-template-columns: 280px 1fr; gap: 2rem; align-items:center; padding: 3rem 0 2rem }
     .avatar { border-radius: 20px; overflow:hidden; border:1px solid var(--border); box-shadow: var(--shadow) }
-    .avatar img { width: 240px;  height: 240px; object-fit: cover; border-radius: 20px; /* or 50% for circular */}
+    .avatar img { width: 240px;  height: 240px; object-fit: cover; border-radius: 2px; /* or 50% for circular */}
     .hello h1 { font-size: clamp(1.8rem, 2.3vw + 1rem, 3rem); margin:.2rem 0 .6rem }
     .hello p.lead { font-size: 1.1rem; color: var(--muted) }
     .chips { display:flex; flex-wrap:wrap; gap:.5rem; margin:1rem 0 0 }
@@ -134,16 +134,17 @@
       <nav>
         <div class="nav-left">
           <span class="brand">Guido Sassaroli</span>
-          <span class="chip" title="Location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Italy</span>
+          <span class="chip" title="Location"><i class="fas fa-map-marker-alt" aria-hidden="true"></i> Milan, Italy</span>
         </div>
         <div class="nav-links">
           <a href="#about">About</a>
-          <a href="#experience">Experience</a>
-          <a href="#education">Education</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
+          <!-- <a href="#experience">Experience</a> -->
+          <!-- <a href="#education">Education</a> -->
+          <!-- <a href="#skills">Skills</a> -->
+          <!-- <a href="#projects">Projects</a> -->
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
+          <a href="blog.html">Blog</a>
           <button id="themeToggle" class="btn" aria-label="Toggle theme"><i class="fas fa-adjust" aria-hidden="true"></i> Theme</button>
         </div>
       </nav>
@@ -175,7 +176,7 @@
     <section id="about" class="reveal">
       <h2 class="section-title"><span class="dot"></span> About Me</h2>
       <div class="card">
-        <p>I'm a control systems engineer with expertise in model predictive control (MPC) and machine learning, with experience in academic and industrial research. I co-founded the first robotics student association at Politecnico di Milano. Italian mother tongue, fluent in English and Spanish.</p>
+        <p>I'm a control systems engineer with expertise in model predictive control (MPC) and machine learning, with experience in research. I co-founded the first robotics student association at Politecnico di Milano. Italian mother tongue, fluent in English and Spanish.</p>
       </div>
     </section>
 
@@ -258,13 +259,7 @@
           <h3>BSc Automation & Control Engineering <span class="meta">· Politecnico di Milano · 2017 – 2020</span></h3>
         </div>
         </div>
-        <div class="tl-item">
-        <div class="tl-dot" aria-hidden="true"></div>
-        <div class="card">
-          <h3>Origin</h3>
-          <p>Born August 1998 in Jesi, Marche, Italy.</p>
-        </div>
-        </div>
+        
       </div>
     </section>
 
